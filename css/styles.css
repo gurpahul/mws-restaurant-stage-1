@@ -273,3 +273,49 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+
+/* ====================== RESPONSIVENESS ====================== */
+@media screen and (max-width: 990px) {
+  #map-container {
+    margin: auto;
+    width: 80%
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 1020px) {
+  ul#restaurants-list{
+    width: 90%;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #restaurants-list li{
+    width: 100%;
+    margin: auto;
+     
+  }
+}
+
+
+#restaurants-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+
+  
+
