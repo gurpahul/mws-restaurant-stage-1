@@ -47,6 +47,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  display: none;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -139,7 +140,7 @@ nav h1 a {
 }
 #restaurants-list li {
   background-color: #fff;
-  border: 2px solid #ccc;
+  border: 2px solid black;
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
@@ -281,10 +282,6 @@ nav h1 a {
     margin: auto;
     width: 80%
   }
-
-
-
-
 }
 
 @media screen and (max-width: 1020px) {
@@ -301,8 +298,8 @@ nav h1 a {
   }
 }
 
-@media screen and (max-width: 670px) {
-  #restaurants-list li{
+@media screen and (max-width: 512px) {
+  #restaurants-list {
     width: 100%;
     margin: auto;
      
@@ -318,4 +315,67 @@ nav h1 a {
   }
 
   
+@media (max-width: 768px) {
+  #footer {
+    font-size: 12px;
+  }
+}
+@media (min-width: 769px) {
+  #footer {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  nav h1 {
+    padding: 20px 0;
+  }
+  nav h1 a {
+    font-size: 21px;
+    letter-spacing: 11px;
+  }
+}
+@media (min-width: 992px) {
+  nav h1 {
+    padding: 20px 0;
+  }
+  nav h1 a {
+    font-size: 23px;
+    letter-spacing: 12px;
+  }
+}
+
+@media (max-width: 791px) {
+  #restaurants-list li {
+    margin: 15px auto;
+  }
+}
+
+@media (min-width: 792px) and (max-width: 1199px){
+  #restaurants-list li {
+    margin: 15px 0;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .touch-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  #heart {
+    padding-top: 7px;
+  }
+
+  #title-header {
+    align-items: center;
+  }
+
+  .star-icon {
+    width: 30px;
+  }
+}
+
 
